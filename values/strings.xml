@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Daily Prayer Points</string>
+
+    <string name="hello_world">Share To Bless Others</string>
+    <string name="action_settings">Settings</string>
+    <string name="special">Everyday is special, tomorrow you will receive another prayer point. Can\'t wait\? </string>
+    <string name="default_prayer">In the name of Jesus, I refuse to fear, because God has not given me the spirit of fear, but of power and of love and of a sound mind.</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>
