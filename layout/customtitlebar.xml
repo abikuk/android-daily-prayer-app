@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="50dp" android:background="@mipmap/action_bar_bg">
+
+    <ImageView android:layout_width="25px" android:layout_height="25px"
+        android:clickable="false"
+        android:src="@mipmap/ic_launcher"></ImageView>
+    <TextView android:id="@+id/customtitlebar"
+        android:layout_width="wrap_content" android:layout_height="fill_parent"
+        android:text="Prayer Points" android:textColor="#ffffff" android:textStyle="bold"
+        android:padding="3px" />
+</LinearLayout>

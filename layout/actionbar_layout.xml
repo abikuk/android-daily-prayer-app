@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBarCompat" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:paddingLeft="5dip"
+        android:scaleType="center"
+        android:src="@mipmap/candle_bg" />
+
+    <TextView android:id="@+id/customtitlebar"
+        android:layout_width="wrap_content" android:layout_height="fill_parent"
+        android:text="Daily PP" android:textColor="#ffffff" android:textStyle="bold"
+        android:clickable="false"
+        android:paddingTop="15dp"
+        android:paddingLeft="1dip"
+        android:scaleType="center"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/share_button"
+            android:layout_gravity="left"
+            />
+        <ImageButton
+            android:id="@+id/info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/share_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="14dp"
+            android:visibility="gone"
+            android:background="@drawable/info_pen"
+            android:layout_gravity="right"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

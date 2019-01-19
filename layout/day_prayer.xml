@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:background="@mipmap/red_gradient"
+    tools:context=".DisplayPrayerImage"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_layout"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/candle_bg_2"/>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_prayer"
+                android:text="@string/default_prayer"
+                android:textSize="18dip"
+                android:background="#8000"
+                android:padding="14dip"
+                android:minEms="2"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </ScrollView>
+
+    </LinearLayout>
+    <FrameLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/special_day"
+            android:textColor="#CDD1D1"
+            android:minEms="2"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#8000"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Tomorrow is another day, you will get new prayer point."
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:autoLink="web"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#CDD1D1"
+            android:text="Tomorrow you will receive another prayer point. Can\'t wait? bit.ly/1JMkOP9"
+            android:id="@+id/url_link"/>
+
+    </FrameLayout>
+
+</LinearLayout>
